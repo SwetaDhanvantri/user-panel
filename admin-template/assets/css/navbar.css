@@ -1,0 +1,20 @@
+.main-sidebar{
+  background: linear-gradient(-45deg, #1391a5, #274685) !important;
+  color: #fff;
+  
+}
+.main-sidebar a{
+        color: #fff !important;
+        font-size: 18px !important;
+} 
+.main-sidebar li{
+    color: #fff !important;
+    font-size: 18px !important;
+
+
+}
+.main-sidebar ul{
+    color: #fff !important;
+    font-size: 18px !important;
+
+}
