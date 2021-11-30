@@ -7,3 +7,10 @@
 hr{
     height: 7px;
 }
+
+.main-content h2{
+    color:#274685;
+    padding: 60px;
+    font-size: 36px;
+    font-weight: 800;
+}

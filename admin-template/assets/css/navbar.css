@@ -2,19 +2,38 @@
   background: linear-gradient(-45deg, #1391a5, #274685) !important;
   color: #fff;
   
+  
+}
+
+.main-sidebar .nav-items{
+  text-align: left;
+  margin-top: 30px;
+  
+}
+.main-content h2{
+  color:#274685;
+  padding: 60px;font-size: 36px;
+  font-weight: 800;
 }
 .main-sidebar a{
         color: #fff !important;
         font-size: 18px !important;
+        text-align: left !important;
+        padding: 20px;
+       
 } 
 .main-sidebar li{
+  text-align: left !important;
     color: #fff !important;
     font-size: 18px !important;
+  }
 
 
-}
+
 .main-sidebar ul{
+ 
+  text-align: left !important;
     color: #fff !important;
     font-size: 18px !important;
-
+ 
 }
