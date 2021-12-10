@@ -1,5 +1,5 @@
 .section1 h3{
-    color:#274685;
+    color:#274685
     padding: 40px;
     font-size: 32px;
     font-weight: 700;
@@ -13,4 +13,22 @@ hr{
     padding: 60px;
     font-size: 36px;
     font-weight: 800;
+}
+
+.table thead{
+ color: #fff;
+ background: linear-gradient(-45deg, #1391a5, #274685) !important;
+}
+.table th{
+    color: #fff !important;
+}
+
+.btn{
+    
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.total{
+    background: #fff;
+    box-shadow: 0 15px 18px rgba(179, 179, 179, .6);
 }
