@@ -2,22 +2,27 @@
 <html lang="en">
 
 
-<!-- alert.html  21 Nov 2019 03:51:00 GMT -->
+<!-- breadcrumb.html  21 Nov 2019 03:51:00 GMT -->
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
   <title>Vidhyamani - User Dashboard </title>
   <!-- General CSS Files -->
   <link rel="stylesheet" href="assets/css/app.min.css">
-  <link rel="stylesheet" href="assets/css/courses.css">
+  <link rel="stylesheet" href="assets/css/cart.css">
   <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/navbar.scss">
   <!-- Template CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/components.css">
-  <link rel="stylesheet" href="">
   <!-- Custom style CSS -->
   <link rel="stylesheet" href="assets/css/custom.css">
   <link rel='shortcut icon' type='image/x-icon' href='images/mansi (1) (1) (1).png' />
+<link rel="stylesheet" href="assets/css/card.css">
+
+  
+  
+  
 </head>
 
 <body>
@@ -201,40 +206,40 @@
       </div>
       <!-- Main Content -->
       <div class="main-content">
-
         <section class="section1">
-          <div class="section-body">
-            <div class="card">
-                 
-              <h2 class="text-center my-4">RUNNING COURSES</h2>
+            <h4>PROCEED TO PAY $31.53 WITH CREDIT/DEBIT/ATM CARD</h4>
+            <div id="credit-card" class="tab-pane fade show active pt-3">
+                <form role="form" onsubmit="event.preventDefault()">
+                    <div class="form-group"> <label for="username">
+                            <h6>Card Owner</h6>
+                        </label> <input type="text" name="username" placeholder="Card Owner Name" required class="form-control "> </div>
+                    <div class="form-group"> <label for="cardNumber">
+                            <h6>Card number</h6>
+                        </label>
+                        <div class="input-group"> <input type="text" name="cardNumber" placeholder="Valid card number" class="form-control " required>
+                            <div class="input-group-append"> <span class="input-group-text text-muted"> <i class="fab fa-cc-visa mx-1"></i> <i class="fab fa-cc-mastercard mx-1"></i> <i class="fab fa-cc-amex mx-1"></i> </span> </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="form-group"> <label><span class="hidden-xs">
+                                        <h6>Expiration Date</h6>
+                                    </span></label>
+                                <div class="input-group"> <input type="number" placeholder="MM" name="" class="form-control" required> <input type="number" placeholder="YY" name="" class="form-control" required> </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group mb-4"> <label data-toggle="tooltip" title="Three digit CV code on the back of your card">
+                                    <h6>CVV <i class="fa fa-question-circle d-inline"></i></h6>
+                                </label> <input type="text" required class="form-control"> </div>
+                        </div>
+                    </div>
+                    <div> <button type="button" class="subscribe btn btn-primary btn-block shadow-sm"> Confirm Payment </button>
+                </form>
             </div>
-            <hr>
-            <div class="mt-4 pt-4">
-            <div class="row">
-              <div class="col-xl-4 col-sm-12">
-                <div class="container">
-                  <img src="assets/img/image-gallery/10.png" class="img-fluid" alt="Responsive image">
-                  <h4 class="text-center">Graphic Design</h4>
-                </div>
-              </div>
-
-              <div class="col-xl-4 col-sm-12">
-                <div class="container">
-                  <img src="assets/img/image-gallery/12.png" class="img-fluid" alt="Responsive image">
-                  <h4 class="text-center">Web Design</h4>
-                </div>
-              </div>
-
-              <div class="col-xl-4 col-sm-12">
-                <div class="container">
-                  <img src="assets/img/image-gallery/12.png" class="img-fluid" alt="Responsive image">
-                  <h4 class="text-center">Youtuber</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         </section>
+        </div>
+
 
 
         <div class="settingSidebar">
@@ -349,5 +354,5 @@
 </body>
 
 
-<!-- alert.html  21 Nov 2019 03:51:00 GMT -->
+<!-- breadcrumb.html  21 Nov 2019 03:51:00 GMT -->
 </html>

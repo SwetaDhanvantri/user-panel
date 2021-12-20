@@ -1,0 +1,12 @@
+html body{
+    background-color: #fff;
+}
+.btn {
+    color: chocolate;
+    background-color:  #274685;
+}
+.main-content h4{
+    color: #274685;
+font-size: 28px;
+padding-top: 30px;
+}

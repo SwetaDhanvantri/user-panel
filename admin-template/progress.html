@@ -1,618 +1,363 @@
-<!DOCTYPE html>
-<html lang="en">
 
-
-<!-- progress.html  21 Nov 2019 03:51:03 GMT -->
-<head>
-  <meta charset="UTF-8">
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-  <title>Otika - Admin Dashboard Template</title>
-  <!-- General CSS Files -->
-  <link rel="stylesheet" href="assets/css/app.min.css">
-  <!-- Template CSS -->
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/components.css">
-  <!-- Custom style CSS -->
-  <link rel="stylesheet" href="assets/css/custom.css">
-  <link rel='shortcut icon' type='image/x-icon' href='assets/img/favicon.ico' />
-</head>
-
-<body>
-  <div class="loader"></div>
-  <div id="app">
-    <div class="main-wrapper main-wrapper-1">
-      <div class="navbar-bg"></div>
-      <nav class="navbar navbar-expand-lg main-navbar sticky">
-        <div class="form-inline mr-auto">
-          <ul class="navbar-nav mr-3">
-            <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg
-									collapse-btn"> <i data-feather="align-justify"></i></a></li>
-            <li><a href="#" class="nav-link nav-link-lg fullscreen-btn">
-                <i data-feather="maximize"></i>
-              </a></li>
-            <li>
-              <form class="form-inline mr-auto">
-                <div class="search-element">
-                  <input class="form-control" type="search" placeholder="Search" aria-label="Search" data-width="200">
-                  <button class="btn" type="submit">
-                    <i class="fas fa-search"></i>
-                  </button>
-                </div>
-              </form>
-            </li>
-          </ul>
-        </div>
-        <ul class="navbar-nav navbar-right">
-          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
-              class="nav-link nav-link-lg message-toggle"><i data-feather="mail"></i>
-              <span class="badge headerBadge1">
-                6 </span> </a>
-            <div class="dropdown-menu dropdown-list dropdown-menu-right pullDown">
-              <div class="dropdown-header">
-                Messages
-                <div class="float-right">
-                  <a href="#">Mark All As Read</a>
-                </div>
-              </div>
-              <div class="dropdown-list-content dropdown-list-message">
-                <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar
-											text-white"> <img alt="image" src="assets/img/users/user-1.png" class="rounded-circle">
-                  </span> <span class="dropdown-item-desc"> <span class="message-user">John
-                      Deo</span>
-                    <span class="time messege-text">Please check your mail !!</span>
-                    <span class="time">2 Min Ago</span>
-                  </span>
-                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
-                    <img alt="image" src="assets/img/users/user-2.png" class="rounded-circle">
-                  </span> <span class="dropdown-item-desc"> <span class="message-user">Sarah
-                      Smith</span> <span class="time messege-text">Request for leave
-                      application</span>
-                    <span class="time">5 Min Ago</span>
-                  </span>
-                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
-                    <img alt="image" src="assets/img/users/user-5.png" class="rounded-circle">
-                  </span> <span class="dropdown-item-desc"> <span class="message-user">Jacob
-                      Ryan</span> <span class="time messege-text">Your payment invoice is
-                      generated.</span> <span class="time">12 Min Ago</span>
-                  </span>
-                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
-                    <img alt="image" src="assets/img/users/user-4.png" class="rounded-circle">
-                  </span> <span class="dropdown-item-desc"> <span class="message-user">Lina
-                      Smith</span> <span class="time messege-text">hii John, I have upload
-                      doc
-                      related to task.</span> <span class="time">30
-                      Min Ago</span>
-                  </span>
-                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
-                    <img alt="image" src="assets/img/users/user-3.png" class="rounded-circle">
-                  </span> <span class="dropdown-item-desc"> <span class="message-user">Jalpa
-                      Joshi</span> <span class="time messege-text">Please do as specify.
-                      Let me
-                      know if you have any query.</span> <span class="time">1
-                      Days Ago</span>
-                  </span>
-                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-avatar text-white">
-                    <img alt="image" src="assets/img/users/user-2.png" class="rounded-circle">
-                  </span> <span class="dropdown-item-desc"> <span class="message-user">Sarah
-                      Smith</span> <span class="time messege-text">Client Requirements</span>
-                    <span class="time">2 Days Ago</span>
-                  </span>
-                </a>
-              </div>
-              <div class="dropdown-footer text-center">
-                <a href="#">View All <i class="fas fa-chevron-right"></i></a>
-              </div>
-            </div>
-          </li>
-          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
-              class="nav-link notification-toggle nav-link-lg"><i data-feather="bell" class="bell"></i>
-            </a>
-            <div class="dropdown-menu dropdown-list dropdown-menu-right pullDown">
-              <div class="dropdown-header">
-                Notifications
-                <div class="float-right">
-                  <a href="#">Mark All As Read</a>
-                </div>
-              </div>
-              <div class="dropdown-list-content dropdown-list-icons">
-                <a href="#" class="dropdown-item dropdown-item-unread"> <span
-                    class="dropdown-item-icon bg-primary text-white"> <i class="fas
-												fa-code"></i>
-                  </span> <span class="dropdown-item-desc"> Template update is
-                    available now! <span class="time">2 Min
-                      Ago</span>
-                  </span>
-                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-icon bg-info text-white"> <i class="far
-												fa-user"></i>
-                  </span> <span class="dropdown-item-desc"> <b>You</b> and <b>Dedik
-                      Sugiharto</b> are now friends <span class="time">10 Hours
-                      Ago</span>
-                  </span>
-                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-icon bg-success text-white"> <i
-                      class="fas
-												fa-check"></i>
-                  </span> <span class="dropdown-item-desc"> <b>Kusnaedi</b> has
-                    moved task <b>Fix bug header</b> to <b>Done</b> <span class="time">12
-                      Hours
-                      Ago</span>
-                  </span>
-                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-icon bg-danger text-white"> <i
-                      class="fas fa-exclamation-triangle"></i>
-                  </span> <span class="dropdown-item-desc"> Low disk space. Let's
-                    clean it! <span class="time">17 Hours Ago</span>
-                  </span>
-                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-icon bg-info text-white"> <i class="fas
-												fa-bell"></i>
-                  </span> <span class="dropdown-item-desc"> Welcome to Otika
-                    template! <span class="time">Yesterday</span>
-                  </span>
-                </a>
-              </div>
-              <div class="dropdown-footer text-center">
-                <a href="#">View All <i class="fas fa-chevron-right"></i></a>
-              </div>
-            </div>
-          </li>
-          <li class="dropdown"><a href="#" data-toggle="dropdown"
-              class="nav-link dropdown-toggle nav-link-lg nav-link-user"> <img alt="image" src="assets/img/user.png"
-                class="user-img-radious-style"> <span class="d-sm-none d-lg-inline-block"></span></a>
-            <div class="dropdown-menu dropdown-menu-right pullDown">
-              <div class="dropdown-title">Hello Sarah Smith</div>
-              <a href="profile.html" class="dropdown-item has-icon"> <i class="far
-										fa-user"></i> Profile
-              </a> <a href="timeline.html" class="dropdown-item has-icon"> <i class="fas fa-bolt"></i>
-                Activities
-              </a> <a href="#" class="dropdown-item has-icon"> <i class="fas fa-cog"></i>
-                Settings
-              </a>
-              <div class="dropdown-divider"></div>
-              <a href="auth-login.html" class="dropdown-item has-icon text-danger"> <i class="fas fa-sign-out-alt"></i>
-                Logout
-              </a>
-            </div>
-          </li>
-        </ul>
-      </nav>
-      <div class="main-sidebar sidebar-style-2">
-        <aside id="sidebar-wrapper">
-          <div class="sidebar-brand">
-            <a href="index.html"> <img alt="image" src="assets/img/logo.png" class="header-logo" /> <span
-                class="logo-name">Otika</span>
-            </a>
-          </div>
-          <ul class="sidebar-menu">
-            <li class="menu-header">Main</li>
-            <li class="dropdown">
-              <a href="index.html" class="nav-link"><i data-feather="monitor"></i><span>Dashboard</span></a>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="briefcase"></i><span>Widgets</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="widget-chart.html">Chart Widgets</a></li>
-                <li><a class="nav-link" href="widget-data.html">Data Widgets</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="command"></i><span>Apps</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="chat.html">Chat</a></li>
-                <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-                <li><a class="nav-link" href="blog.html">Blog</a></li>
-                <li><a class="nav-link" href="calendar.html">Calendar</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="mail"></i><span>Email</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="email-inbox.html">Inbox</a></li>
-                <li><a class="nav-link" href="email-compose.html">Compose</a></li>
-                <li><a class="nav-link" href="email-read.html">read</a></li>
-              </ul>
-            </li>
-            <li class="menu-header">UI Elements</li>
-            <li class="dropdown active">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="copy"></i><span>Basic
-                  Components</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="alert.html">Alert</a></li>
-                <li><a class="nav-link" href="badge.html">Badge</a></li>
-                <li><a class="nav-link" href="breadcrumb.html">Breadcrumb</a></li>
-                <li><a class="nav-link" href="buttons.html">Buttons</a></li>
-                <li><a class="nav-link" href="collapse.html">Collapse</a></li>
-                <li><a class="nav-link" href="dropdown.html">Dropdown</a></li>
-                <li><a class="nav-link" href="checkbox-and-radio.html">Checkbox &amp; Radios</a></li>
-                <li><a class="nav-link" href="list-group.html">List Group</a></li>
-                <li><a class="nav-link" href="media-object.html">Media Object</a></li>
-                <li><a class="nav-link" href="navbar.html">Navbar</a></li>
-                <li><a class="nav-link" href="pagination.html">Pagination</a></li>
-                <li><a class="nav-link" href="popover.html">Popover</a></li>
-                <li class="active"><a class="nav-link" href="progress.html">Progress</a></li>
-                <li><a class="nav-link" href="tooltip.html">Tooltip</a></li>
-                <li><a class="nav-link" href="flags.html">Flag</a></li>
-                <li><a class="nav-link" href="typography.html">Typography</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="shopping-bag"></i><span>Advanced</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="avatar.html">Avatar</a></li>
-                <li><a class="nav-link" href="card.html">Card</a></li>
-                <li><a class="nav-link" href="modal.html">Modal</a></li>
-                <li><a class="nav-link" href="sweet-alert.html">Sweet Alert</a></li>
-                <li><a class="nav-link" href="toastr.html">Toastr</a></li>
-                <li><a class="nav-link" href="empty-state.html">Empty State</a></li>
-                <li><a class="nav-link" href="multiple-upload.html">Multiple Upload</a></li>
-                <li><a class="nav-link" href="pricing.html">Pricing</a></li>
-                <li><a class="nav-link" href="tabs.html">Tab</a></li>
-              </ul>
-            </li>
-            <li><a class="nav-link" href="blank.html"><i data-feather="file"></i><span>Blank Page</span></a></li>
-            <li class="menu-header">Otika</li>
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="layout"></i><span>Forms</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="basic-form.html">Basic Form</a></li>
-                <li><a class="nav-link" href="forms-advanced-form.html">Advanced Form</a></li>
-                <li><a class="nav-link" href="forms-editor.html">Editor</a></li>
-                <li><a class="nav-link" href="forms-validation.html">Validation</a></li>
-                <li><a class="nav-link" href="form-wizard.html">Form Wizard</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="grid"></i><span>Tables</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="basic-table.html">Basic Tables</a></li>
-                <li><a class="nav-link" href="advance-table.html">Advanced Table</a></li>
-                <li><a class="nav-link" href="datatables.html">Datatable</a></li>
-                <li><a class="nav-link" href="export-table.html">Export Table</a></li>
-                <li><a class="nav-link" href="editable-table.html">Editable Table</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="pie-chart"></i><span>Charts</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="chart-amchart.html">amChart</a></li>
-                <li><a class="nav-link" href="chart-apexchart.html">apexchart</a></li>
-                <li><a class="nav-link" href="chart-echart.html">eChart</a></li>
-                <li><a class="nav-link" href="chart-chartjs.html">Chartjs</a></li>
-                <li><a class="nav-link" href="chart-sparkline.html">Sparkline</a></li>
-                <li><a class="nav-link" href="chart-morris.html">Morris</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="feather"></i><span>Icons</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="icon-font-awesome.html">Font Awesome</a></li>
-                <li><a class="nav-link" href="icon-material.html">Material Design</a></li>
-                <li><a class="nav-link" href="icon-ionicons.html">Ion Icons</a></li>
-                <li><a class="nav-link" href="icon-feather.html">Feather Icons</a></li>
-                <li><a class="nav-link" href="icon-weather-icon.html">Weather Icon</a></li>
-              </ul>
-            </li>
-            <li class="menu-header">Media</li>
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="image"></i><span>Gallery</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="light-gallery.html">Light Gallery</a></li>
-                <li><a href="gallery1.html">Gallery 2</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="flag"></i><span>Sliders</span></a>
-              <ul class="dropdown-menu">
-                <li><a href="carousel.html">Bootstrap Carousel.html</a></li>
-                <li><a class="nav-link" href="owl-carousel.html">Owl Carousel</a></li>
-              </ul>
-            </li>
-            <li><a class="nav-link" href="timeline.html"><i data-feather="sliders"></i><span>Timeline</span></a></li>
-            <li class="menu-header">Maps</li>
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="map"></i><span>Google
-                  Maps</span></a>
-              <ul class="dropdown-menu">
-                <li><a href="gmaps-advanced-route.html">Advanced Route</a></li>
-                <li><a href="gmaps-draggable-marker.html">Draggable Marker</a></li>
-                <li><a href="gmaps-geocoding.html">Geocoding</a></li>
-                <li><a href="gmaps-geolocation.html">Geolocation</a></li>
-                <li><a href="gmaps-marker.html">Marker</a></li>
-                <li><a href="gmaps-multiple-marker.html">Multiple Marker</a></li>
-                <li><a href="gmaps-route.html">Route</a></li>
-                <li><a href="gmaps-simple.html">Simple</a></li>
-              </ul>
-            </li>
-            <li><a class="nav-link" href="vector-map.html"><i data-feather="map-pin"></i><span>Vector
-                  Map</span></a></li>
-            <li class="menu-header">Pages</li>
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="user-check"></i><span>Auth</span></a>
-              <ul class="dropdown-menu">
-                <li><a href="auth-login.html">Login</a></li>
-                <li><a href="auth-register.html">Register</a></li>
-                <li><a href="auth-forgot-password.html">Forgot Password</a></li>
-                <li><a href="auth-reset-password.html">Reset Password</a></li>
-                <li><a href="subscribe.html">Subscribe</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="alert-triangle"></i><span>Errors</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="errors-503.html">503</a></li>
-                <li><a class="nav-link" href="errors-403.html">403</a></li>
-                <li><a class="nav-link" href="errors-404.html">404</a></li>
-                <li><a class="nav-link" href="errors-500.html">500</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="anchor"></i><span>Other
-                  Pages</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="create-post.html">Create Post</a></li>
-                <li><a class="nav-link" href="posts.html">Posts</a></li>
-                <li><a class="nav-link" href="profile.html">Profile</a></li>
-                <li><a class="nav-link" href="contact.html">Contact</a></li>
-                <li><a class="nav-link" href="invoice.html">Invoice</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i
-                  data-feather="chevrons-down"></i><span>Multilevel</span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Menu 1</a></li>
-                <li class="dropdown">
-                  <a href="#" class="has-dropdown">Menu 2</a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Child Menu 1</a></li>
-                    <li class="dropdown">
-                      <a href="#" class="has-dropdown">Child Menu 2</a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">Child Menu 1</a></li>
-                        <li><a href="#">Child Menu 2</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#"> Child Menu 3</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </aside>
-      </div>
       <!-- Main Content -->
       <div class="main-content">
         <section class="section">
+        
           <div class="section-body">
-            <div class="row">
-              <div class="col-12 col-md-6 col-lg-6">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Simple</h4>
+
+            <div class="container py-5">
+              <!-- For demo purpose -->
+              <div class="row mb-4">
+                  <div class="col-xl-12 col-sm-12 mx-auto text-center">
+                      <h1 class="display-6">Payment</h1>
                   </div>
-                  <div class="card-body">
-                    <div class="progress mb-3">
-                      <div class="progress-bar" role="progressbar" data-width="15%" aria-valuenow="15" aria-valuemin="0"
-                        aria-valuemax="100"></div>
-                    </div>
-                    <div class="progress mb-3">
-                      <div class="progress-bar" role="progressbar" data-width="25%" aria-valuenow="25" aria-valuemin="0"
-                        aria-valuemax="100"></div>
-                    </div>
-                    <div class="progress mb-3">
-                      <div class="progress-bar" role="progressbar" data-width="50%" aria-valuenow="50" aria-valuemin="0"
-                        aria-valuemax="100"></div>
-                    </div>
-                    <div class="progress mb-3">
-                      <div class="progress-bar" role="progressbar" data-width="75%" aria-valuenow="75" aria-valuemin="0"
-                        aria-valuemax="100"></div>
-                    </div>
-                    <div class="progress mb-3">
-                      <div class="progress-bar" role="progressbar" data-width="100%" aria-valuenow="100"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
+              </div> <!-- End -->
+              <div class="row">
+                  <div class="col-xl-12 col-sm-12 mx-auto">
+                      <div class="card ">
+                          <div class="card-header row">
+                              <div class="bg-white shadow-sm pt-4 pl-2 pr-2 pb-2 col-xl-4">
+                                  <!-- Credit card form tabs -->
+                                  <ul role="tablist" class="nav bg-light nav-pills rounded nav-fill mb-3">
+                                      <li class="nav-item"> <a data-toggle="pill" href="#credit-card" class="nav-link active "> <i class="fas fa-credit-card mr-2"></i> Credit/ Debit/ ATM card </a> </li>
+                                      <li class="nav-item"> <a data-toggle="pill" href="#paypal" class="nav-link "> <i class="fab fa-paypal mr-2"></i> Paypal </a> </li>
+                                      <li class="nav-item"> <a data-toggle="pill" href="#net-banking" class="nav-link "> <i class="fas fa-mobile-alt mr-2"></i> Net Banking </a> </li>
+                                      <li class="nav-item"> <a data-toggle="pill" href="#paytm" class="nav-link "> <i class="fas fa-mobile-alt mr-2"></i> Paytm </a> </li>
+                                      <li class="nav-item"> <a data-toggle="pill" href="#phonepe" class="nav-link "> <i class="fas fa-mobile-alt mr-2"></i> Phone Pe </a> </li>
+                                      <li class="nav-item"> <a data-toggle="pill" href="#wallets" class="nav-link "> <i class="fas fa-mobile-alt mr-2"></i> Wallets </a> </li>
+                                      <li class="nav-item"> <a data-toggle="pill" href="#upi" class="nav-link "> <i class="fas fa-mobile-alt mr-2"></i> UPI </a> </li>
+                                      
+                                  </ul>
+                              </div> <!-- End -->
+                              <!-- Credit card form content -->
+                              <div class="tab-content col-xl-8 ">
+                                  <!-- credit card info-->
+                                  <div id="credit-card" class="tab-pane fade show active pt-3">
+                                      <form role="form" onsubmit="event.preventDefault()">
+                                          <div class="form-group"> <label for="username">
+                                                  <h6>Card Owner</h6>
+                                              </label> <input type="text" name="username" placeholder="Card Owner Name" required class="form-control "> </div>
+                                          <div class="form-group"> <label for="cardNumber">
+                                                  <h6>Card number</h6>
+                                              </label>
+                                              <div class="input-group"> <input type="text" name="cardNumber" placeholder="Valid card number" class="form-control " required>
+                                                  <div class="input-group-append"> <span class="input-group-text text-muted"> <i class="fab fa-cc-visa mx-1"></i> <i class="fab fa-cc-mastercard mx-1"></i> <i class="fab fa-cc-amex mx-1"></i> </span> </div>
+                                              </div>
+                                          </div>
+                                          <div class="row">
+                                              <div class="col-sm-8">
+                                                  <div class="form-group"> <label><span class="hidden-xs">
+                                                              <h6>Expiration Date</h6>
+                                                          </span></label>
+                                                      <div class="input-group"> <input type="number" placeholder="MM" name="" class="form-control" required> <input type="number" placeholder="YY" name="" class="form-control" required> </div>
+                                                  </div>
+                                              </div>
+                                              <div class="col-sm-4">
+                                                  <div class="form-group mb-4"> <label data-toggle="tooltip" title="Three digit CV code on the back of your card">
+                                                          <h6>CVV <i class="fa fa-question-circle d-inline"></i></h6>
+                                                      </label> <input type="text" required class="form-control"> </div>
+                                              </div>
+                                          </div>
+                                          <div class="card-footer"> <button type="button" class="subscribe btn btn-primary btn-block shadow-sm"> Confirm Payment </button>
+                                      </form>
+                                  </div>
+                              </div> <!-- End -->
+                              <!-- Paypal info -->
+                              <div id="paypal" class="tab-pane fade pt-3">
+                                  <h6 class="pb-2">Select your paypal account type</h6>
+                                  <div class="form-group "> <label class="radio-inline"> <input type="radio" name="optradio" checked> Domestic </label> <label class="radio-inline"> <input type="radio" name="optradio" class="ml-5">International </label></div>
+                                  <p> <button type="button" class="btn btn-primary "><i class="fab fa-paypal mr-2"></i> Log into my Paypal</button> </p>
+                                  <p class="text-muted"> Note: After clicking on the button, you will be directed to a secure gateway for payment. After completing the payment process, you will be redirected back to the website to view details of your order. </p>
+                              </div> <!-- End -->
+                              <!-- bank transfer info -->
+                              <div id="net-banking" class="tab-pane fade pt-3">
+                                  <div class="form-group "> <label for="Select Your Bank">
+                                          <h6>Select your Bank</h6>
+                                      </label> <select class="form-control" id="ccmonth">
+                                          <option value="" selected disabled>--Please select your Bank--</option>
+                                          <option>HDFC Bank</option>
+                                          <option>State Bank of India</option>
+                                          <option>Punjab National Bank</option>
+                                          <option>KOTAK Mahendra Bank</option>
+                                          <option>ICICI Bank</option>
+                                          <option>AXIS Bank</option>
+                                
+                            <option value="AIRTELMONEY">Airtel Payments Bank</option>
+                            <option value="AUSMALLFINBANK">AU Small Finance Bank</option>
+                            <option value="BANDHAN">Bandhan Bank</option>
+                            <option value="BASSIENCATHOLICCOOPB">Bassien Catholic Co-Operative Bank</option>
+                            <option value="BNPPARIBAS">BNP Paribas</option>
+                            <option value="BOBAHRAIN">Bank of Bahrain and Kuwait</option>
+                            <option value="BOBARODA">Bank of Baroda</option>
+                            <option value="BOBARODAC">Bank of Baroda Corporate</option>
+                            <option value="BOBARODAR">Bank of Baroda Retail</option>
+                            <option value="BOI">Bank of India</option>
+                            <option value="BOM">Bank of Maharashtra</option>
+                            <option value="CANARA">Canara Bank</option>
+                            <option value="CATHOLICSYRIAN">Catholic Syrian Bank</option>
+                            <option value="CBI">Central Bank</option>
+                            <option value="CITYUNION">City Union Bank</option>
+                            <option value="CORPORATION">Corporation Bank</option>
+                            <option value="COSMOS">Cosmos Co-op Bank</option>
+                            <option value="DBS">digibank by DBS</option>
+                            <option value="DCB">DCB BANK LTD</option>
+                            <option value="DENA">Dena Bank</option>
+                            <option value="DEUTSCHE">Deutsche Bank</option>
+                            <option value="DHANBANK">Dhanalakshmi Bank</option>
+                            <option value="FEDERALBANK">Federal Bank</option>
+                            <option value="HSBC">HSBC</option>
+                            <option value="IDBI">IDBI Bank</option>
+                            <option value="IDFC">IDFC FIRST Bank</option>
+                            <option value="INDIANBANK">Indian Bank</option>
+                            <option value="INDUSIND">IndusInd Bank</option>
+                            <option value="IOB">Indian Overseas Bank</option>
+                            <option value="JANATABANKPUNE">JANATA SAHAKARI BANK LTD PUNE</option>
+                            <option value="JKBANK">J&amp;K Bank</option>
+                            <option value="KARNATAKA">Karnataka Bank</option>
+                            <option value="KARURVYSYA">Karur Vysya Bank</option>
+                            <option value="LAKSHMIVILAS">Lakshmi Vilas Bank - Retail</option>
+                            <option value="LAKSHMIVILASC">Lakshmi Vilas Bank - Corporate</option>
+                         
+                            <option value="PNBC">Punjab National Bank Corporate</option>
+                            <option value="PNSB">Punjab &amp; Sind Bank</option>
+                            <option value="PUNJABMAHA">Punjab &amp; Maharashtra Co-op Bank</option>
+                            <option value="RATNAKAR">RBL Bank Limited</option>
+                            <option value="RBS">RBS</option>
+                            <option value="SARASWAT">Saraswat Co-op Bank</option>
+                            <option value="SHAMRAOVITHAL">Shamrao Vithal Co-op Bank</option>
+                            <option value="SHIVAMERCOOP">Shivalik Mercantile Co-op Bank</option>
+                            <option value="SOUTHINDIAN">The South Indian Bank</option>
+                            <option value="STANC">Standard Chartered Bank</option>
+                            <option value="TMBANK">Tamilnad Mercantile Bank Limited</option>
+                            <option value="TNMERCANTILE">Tamil Nadu Merchantile Bank</option>
+                            <option value="TNSC">TNSC Bank</option>
+                            <option value="UCO">UCO Bank</option>
+                            <option value="UNIONBANK">Union Bank of India</option>
+                            <option value="YESBANK">Yes Bank</option>
+                            <option value="ZOROACOPBANK">The Zoroastrian Co-Operative Bank</option>
+                                      </select> </div>
+                                  <div class="form-group">
+                                      <p> <button type="button" class="btn btn-primary "><i class="fas fa-mobile-alt mr-2"></i> Proceed Payment</button> </p>
+                                  </div>
+                                  <p class="text-muted">Note: After clicking on the button, you will be directed to a secure gateway for payment. After completing the payment process, you will be redirected back to the website to view details of your order. </p>
+                              </div> <!-- End -->
+                              <!-- End -->
+                          </div>
+
+                          <div id="paytm" class="tab-pane fade pt-3">
+                            <span class="_2pWrdR">Paytm</span>
+                            <div class="_2LXNE3"><span class="_129Iwv">Wallet balance:</span>
+                                <span>₹0</span></div></div>
+                                <div class="_1NIpx6">You will be able to add ₹938 in the next step</div><form class="wVH01b"><button class="_2KpZ6l SoElJK _3g-SY0 _3AWRsL" type="button">CONTINUE</button></form></div>
+                
+                          </div>
+                      </div>
                   </div>
-                </div>
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Label</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="progress mb-3">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-                        aria-valuemax="100">0</div>
-                    </div>
-                    <div class="progress mb-3">
-                      <div class="progress-bar" role="progressbar" data-width="25%" aria-valuenow="25" aria-valuemin="0"
-                        aria-valuemax="100">25%</div>
-                    </div>
-                    <div class="progress mb-3">
-                      <div class="progress-bar" role="progressbar" data-width="50%" aria-valuenow="50" aria-valuemin="0"
-                        aria-valuemax="100">50%</div>
-                    </div>
-                    <div class="progress mb-3">
-                      <div class="progress-bar" role="progressbar" data-width="75%" aria-valuenow="75" aria-valuemin="0"
-                        aria-valuemax="100">75%</div>
-                    </div>
-                    <div class="progress mb-3">
-                      <div class="progress-bar" role="progressbar" data-width="100%" aria-valuenow="100"
-                        aria-valuemin="0" aria-valuemax="100">100%</div>
-                    </div>
-                  </div>
-                </div>
               </div>
-              <div class="col-12 col-md-6 col-lg-6">
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Height</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="progress mb-3" data-height="5">
-                      <div class="progress-bar" role="progressbar" data-width="25%" aria-valuenow="25" aria-valuemin="0"
-                        aria-valuemax="100"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <h3 class="_1hUz_t _2-K-ro"><span class="_3ENQxz"></span><span class="_1aULyb">Payment Options</span></h3>
+           
+         <!--paytm wallet-->
+       <label for="WALLETPREFERREDPAYTM" class="_2Fn-Ln _30jOKh _18Z3T6">
+                <input type="radio" class="_3DAmyP" name="PREFERRED" readonly="" id="WALLETPREFERREDPAYTM">
+                <div class="_1XFPmK"></div>
+
+                <div class="_2jIO64 _3Uc2dx">
+                    <div class="XYyD6I">
+                        <img src="https://rukminim1.flixcart.com/www/96/96/promos/01/09/2020/a07396d4-0543-4b19-8406-b9fcbf5fd735.png?q=100" class="_32J7lJ"><div class="_2nxZhC"><div class="_3EgrW-"></div><div class="_3faTME">
+                          
+                        <ul>
+
+                        </ul>
                     </div>
-                    <div class="progress mb-3" data-height="10">
-                      <div class="progress-bar" role="progressbar" data-width="25%" aria-valuenow="25" aria-valuemin="0"
-                        aria-valuemax="100"></div>
-                    </div>
-                    <div class="progress mb-3" data-height="15">
-                      <div class="progress-bar" role="progressbar" data-width="25%" aria-valuenow="25" aria-valuemin="0"
-                        aria-valuemax="100"></div>
-                    </div>
-                    <div class="progress mb-3" data-height="20">
-                      <div class="progress-bar" role="progressbar" data-width="25%" aria-valuenow="25" aria-valuemin="0"
-                        aria-valuemax="100"></div>
-                    </div>
-                    <div class="progress mb-3" data-height="25">
-                      <div class="progress-bar" role="progressbar" data-width="25%" aria-valuenow="25" aria-valuemin="0"
-                        aria-valuemax="100"></div>
-                    </div>
-                  </div>
                 </div>
-                <div class="card">
-                  <div class="card-header">
-                    <h4>Background</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="progress mb-3">
-                      <div class="progress-bar bg-success" role="progressbar" data-width="25%" aria-valuenow="25"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <div class="progress mb-3">
-                      <div class="progress-bar bg-info" role="progressbar" data-width="50%" aria-valuenow="50"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <div class="progress mb-3">
-                      <div class="progress-bar bg-warning" role="progressbar" data-width="75%" aria-valuenow="75"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <div class="progress mb-3">
-                      <div class="progress-bar bg-danger" role="progressbar" data-width="100%" aria-valuenow="100"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <div class="progress mb-3">
-                      <div class="progress-bar bg-info" role="progressbar" data-width="100%" aria-valuenow="100"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
+            <div class="_3faTME">
+                <div class="_14-o0k">
+                    <span class="_2pWrdR">Paytm</span>
+                    <div class="_2LXNE3"><span class="_129Iwv">Wallet balance:</span>
+                        <span>₹0</span></div></div>
+                        <div class="_1NIpx6">You will be able to add ₹938 in the next step</div><form class="wVH01b"><button class="_2KpZ6l SoElJK _3g-SY0 _3AWRsL" type="button">CONTINUE</button></form></div>
+        
+                        
+                        <!--UPI-->
+        </label>
+            <label for="UPI" class="_2Fn-Ln _30jOKh _18Z3T6">
+                <input type="radio" class="_3DAmyP" name="OTHERS" readonly="" id="UPI">
+                <div class="_1XFPmK"></div>
+                <div class="_2jIO64 _3Uc2dx">
+                    <div class="XYyD6I">
+                        <img src="https://img1a.flixcart.com/linchpin-web/batman-returns/logos/upiLogo6.gif" class="_32J7lJ">
+                        <div class="_2nxZhC">
+                            <div class="_3EgrW-">
+
+                            </div>
+                            <span>UPI</span> 
+                        <ul>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </label>
+         
+       <!--WALLET-->
+            <label for="WALLETOTHERS" class="_2Fn-Ln _30jOKh _2KEUG6 _18Z3T6 _3L7Pww">
+                <input type="radio" class="_3DAmyP" name="OTHERS" readonly="" id="WALLETOTHERS">
+                <div class="_1XFPmK"></div>
+                <div class="_2jIO64 _3Uc2dx">
+                    <div class="XYyD6I">
+                        <img src="https://img1a.flixcart.com/www/linchpin/batman-returns/logos/Payments%20Logo%20animation_1.gif" class="_32J7lJ"><div class="_2nxZhC"><div class="_3EgrW-"></div><div>
+                        <label>Wallets</label>
+                    </div>
+
+                        <div class="WYKhuo">
+                            <label for="PAYTM" class="_2Fn-Ln _3ZH6dW _3L7Pww">
+                            <input type="radio" class="_3DAmyP" name="walletOptions" readonly="" id="PAYTM">
+                            <div class="_1XFPmK">
+
+                            </div>
+                            <div class="_2jIO64">
+                                <div class="_3faTME">
+                                    <div class="_14-o0k"><span class="_2pWrdR">Paytm</span>
+                                        <div class="_2LXNE3">
+                                            <span class="_129Iwv">Wallet balance:</span>
+                                            <span>₹0</span>
+                                        </div>
+                                 </div>
+                                            <div class="_1NIpx6">You will be able to add ₹799 in the next step</div>
+                                            <form class="wVH01b">
+                                                <button class="_2KpZ6l SoElJK _3g-SY0 _3AWRsL" type="button">CONTINUE</button>
+                                            </form>
+                                </div>
+                         </div>
+             </label>
+                  
+               <!--Phonepe-->       
+    <label for="PHONEPE" class="_2Fn-Ln _2LcXZ-">
+                <input disabled="" type="radio" class="_3DAmyP" name="walletOptions" readonly="" id="PHONEPE">
+                    <div class="_1XFPmK"></div>
+                <div class="_2jIO64">
+                    <div class="_3faTME">
+                    <div class="_14-o0k">
+                        <span class="_2pWrdR">PhonePe</span>
+                    </div> 
+                    <div class="_1NIpx6">Coming soon.</div>
+                </div>
+                </div>
+            </label>
+                </div>
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </label>
+
+    <!--CREDIT CARD-->
+            <label for="CREDIT" class="_2Fn-Ln _30jOKh _18Z3T6">
+                <input type="radio" class="_3DAmyP" name="OTHERS" readonly="" id="CREDIT">
+                <div class="_1XFPmK"></div>
+                <div class="_2jIO64 _3Uc2dx">
+                    <div class="XYyD6I"> 
+                <div class="_2nxZhC">
+                    <div class="_3EgrW-"></div>
+                <div>
+                    <span>Credit / Debit / ATM Card</span>
+                    <div class="_1ry--r">
+                        <div class="_1ATe5I">
+                            <img height="16" width="16" src="//static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/super-coin_bac003.svg">
+                            <a class="_11QYyt _1Uy9jJ"></a>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+
+                </ul>
+            </div>
+            </div>
+            </div>
+            </label>
+
+<!--NET BANKING-->
+            <label for="NET_OPTIONS" class="_2Fn-Ln _30jOKh _2KEUG6 _18Z3T6 _3L7Pww">
+                <input type="radio" class="_3DAmyP" name="OTHERS" readonly="" id="NET_OPTIONS">
+                <div class="_1XFPmK"></div>
+                <div class="_2jIO64 _3Uc2dx">
+                    <div class="XYyD6I">
+                        <div class="_2nxZhC">
+                            <div class="_3EgrW-">
+
+                            </div>Net Banking
+                            <div class="_2g7bU4">
+                                <h3 class="_1eyMfe">Popular Banks</h3>
+                                <div>
+                                 <label for="HDFC" class="_2Fn-Ln _3gtO0I _3iI7Qn">
+                                    <input type="radio" class="_3DAmyP" name="netBanking" readonly="" id="HDFC">
+                <div class="_1XFPmK"></div>
+                <div class="_2jIO64">
+            
+                </div>
+            </label>
+            <label for="ICICI" class="_2Fn-Ln _3gtO0I _3iI7Qn">
+                <input type="radio" class="_3DAmyP" name="netBanking" readonly="" id="ICICI">
+                <div class="_1XFPmK"></div>
+                    <div class="_2jIO64">
+                        <span>
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyOCI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNLTctNmg0MHY0MEgtN3oiLz48cGF0aCBmaWxsPSIjRjk5RDI3IiBkPSJNNy41IDZjNi4zLTYuMiAxNC04IDE3LTMuNiAzIDQuMy40IDEzLTYgMTkuMi02LjIgNi4zLTE0IDgtMTcgMy42LTMtNC4zLS4zLTEzIDYtMTkuMiIvPjxwYXRoIGZpbGw9IiNCMDJBMzAiIGQ9Ik0xMS43IDIuN2MtLjcuNS0xLjQgMS0yIDEuOC01LjYgNS41LTggMTMtNS4yIDE2LjcgMi44IDMuOCA5LjYgMi40IDE1LjMtMyAzLTMgNS02LjUgNi05LjcgMC0yLjQtLjItNC41LTEuMy02QzIyLTEgMTctLjUgMTEuNyAyLjUiLz48cGF0aCBmaWxsPSIjRkZGIiBkPSJNMTkuMyAyLjVjLjcuNy4zIDIuNC0xIDMuNi0xLjMgMS43LTMgMi0zLjYgMS0uOC0uMy0uMy0yIDEtMy4yIDEuMi0xLjMgMy0xLjcgMy42LTF6bS00LjUgMjIuMmMtMyAyLjItNiAzLjMtOSAzIDEuMyAwIDIuMy0xLjQgMy0zLjMgMS0yIDEuNS0zLjcgMi01LjQuNS0yLjYuNS00LjUuMi01LS41LS42LTEuNy0uNC0zIC40LS42LjMtMS40IDAtLjQtMSAxLTEuMyA1LTQuMiA2LjMtNC42IDEuMi0uNSAzIDAgMi4zIDEuOC0uNCAxLjMtNS44IDE1LjYtMS44IDE0eiIvPjwvZz48L3N2Zz4=" class="R_IlUx"></span>
+                        </div>
+                    </label>
+                    <label for="SBI" class="_2Fn-Ln _3gtO0I _3iI7Qn">
+                            <input type="radio" class="_3DAmyP" name="netBanking" readonly="" id="SBI">
+                            <div class="_1XFPmK"></div>
+                        <div class="_2jIO64">
+                            <span><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNyIgaGVpZ2h0PSIyNyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNLTctN2g0MHY0MEgtN3oiLz48cGF0aCBmaWxsPSIjMTZEIiBkPSJNMTIuNiAyN0M1LjQgMjYuNS0uMiAyMC40IDAgMTMgLjIgNiA2LjIgMCAxMy41IDBTMjYuOCA1LjggMjcgMTNjLjIgNy40LTUuNCAxMy41LTEyLjYgMTRWMTZjMS0uNSAxLjctMS42IDEuNS0yLjgtLjQtMS4yLTEuNC0yLTIuNi0ycy0yLjIuOC0yLjQgMmMwIDEuMi41IDIuMyAxLjYgMi43Ii8+PC9nPjwvc3ZnPg==" class="R_IlUx">State Bank of India</span>
+                        </div>
+                    </label>
+                    <label for="AXIS" class="_2Fn-Ln _3gtO0I _3iI7Qn"><input type="radio" class="_3DAmyP" name="netBanking" readonly="" id="AXIS">
+                        <div class="_1XFPmK">
+
+                    </div>
+                    <div class="_2jIO64"><span>
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOCIgaGVpZ2h0PSIyNCI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNLTYtOGg0MHY0MEgtNnoiLz48cGF0aCBmaWxsPSIjQkM0MTcwIiBkPSJNMjggMjRoLTguN0wxNCAxNWg4LjdtLTQuNC03LjZMOC43IDI0SDBMMTQgMCIvPjwvZz48L3N2Zz4=" class="R_IlUx">Axis Bank</span></div></label>
+                        <label for="KOTAK" class="_2Fn-Ln _3gtO0I _3iI7Qn">
+                            <input type="radio" class="_3DAmyP" name="netBanking" readonly="" id="KOTAK">
+                            <div class="_1XFPmK"></div>
+                            <div class="_2jIO64"><span>
+                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOCIgaGVpZ2h0PSIyNCIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxkZWZzPjxwYXRoIGlkPSJhIiBkPSJNMjggMEgwdjIzLjhoMjhWMHoiLz48L2RlZnM+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNLTYtOGg0MHY0MEgtNnoiLz48bWFzayBpZD0iYiIgZmlsbD0iI2ZmZiI+PHVzZSB4bGluazpocmVmPSIjYSIvPjwvbWFzaz48cGF0aCBmaWxsPSIjMDAzODc0IiBkPSJNMCAxMkMwIDUuMiA2LjMgMCAxNCAwczE0IDUuMyAxNCAxMmMwIDYuNS02LjMgMTEuOC0xNCAxMS44cy0xNC01LjMtMTQtMTIiIG1hc2s9InVybCgjYikiLz48cGF0aCBmaWxsPSIjRUQxQzI0IiBkPSJNMTIuMyAzLjhsMy4yLTFWMjBsLTMuMiAxLjIiIG1hc2s9InVybCgjYikiLz48cGF0aCBmaWxsPSIjRkZGIiBkPSJNMTQuMiAxNC43QzEyLjggMTYuMyAxMS40IDE4IDkgMThjLTMuNyAwLTUuNC0zLjQtNS40LTYuMyAwLTIuOCAxLjMtNiA0LjgtNiAxLjUgMCAzIDEgNCAyVjEwYy0xLS43LTIuNS0xLTMuNi0xLTIuMiAwLTQuMi43LTQgMyAwIDEuNCAxLjQgMi40IDMgMi40IDIuMiAwIDMuNi0yIDQuNy0zLjZMMTQgOWMxLTEuNiAyLjYtMy4yIDUtMy4yIDMgMCA0LjcgMi40IDUuMiA1SDIzYy0uNS0xLTEuNS0xLjQtMi42LTEuNC0yLjMgMC0zLjggMi01IDMuN2wtMS4yIDJ6TTI0LjUgMTNjLS4zIDIuNi0xLjcgNS00LjggNS0xLjggMC0zLjItMS00LjItMi42di0xLjdjMS4zLjYgMi40IDEuMiAzLjggMS4yIDEuNyAwIDMuMi0xIDMuOC0yaDJ6IiBtYXNrPSJ1cmwoI2IpIi8+PC9nPjwvc3ZnPg==" class="R_IlUx">Kotak Mahindra Bank</span>
+                            </div>
+                        </label>
+                    </div>
+                            <h3 class="_1eyMfe">Other Banks</h3>
+                        <div class="_3gtO0I _2yJyRl"><select class="_1kwp-i">
+                            
+                        </select>
+                        </div>
+                        <button class="_2KpZ6l _1iIe0H _3AWRsL" tabindex="2" disabled="" type="button">PAY ₹799</button>
+                    </div>
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </lab-->
+
+            
           </div>
         </section>
-        <div class="settingSidebar">
-          <a href="javascript:void(0)" class="settingPanelToggle"> <i class="fa fa-spin fa-cog"></i>
-          </a>
-          <div class="settingSidebar-body ps-container ps-theme-default">
-            <div class=" fade show active">
-              <div class="setting-panel-header">Setting Panel
-              </div>
-              <div class="p-15 border-bottom">
-                <h6 class="font-medium m-b-10">Select Layout</h6>
-                <div class="selectgroup layout-color w-50">
-                  <label class="selectgroup-item">
-                    <input type="radio" name="value" value="1" class="selectgroup-input-radio select-layout" checked>
-                    <span class="selectgroup-button">Light</span>
-                  </label>
-                  <label class="selectgroup-item">
-                    <input type="radio" name="value" value="2" class="selectgroup-input-radio select-layout">
-                    <span class="selectgroup-button">Dark</span>
-                  </label>
-                </div>
-              </div>
-              <div class="p-15 border-bottom">
-                <h6 class="font-medium m-b-10">Sidebar Color</h6>
-                <div class="selectgroup selectgroup-pills sidebar-color">
-                  <label class="selectgroup-item">
-                    <input type="radio" name="icon-input" value="1" class="selectgroup-input select-sidebar">
-                    <span class="selectgroup-button selectgroup-button-icon" data-toggle="tooltip"
-                      data-original-title="Light Sidebar"><i class="fas fa-sun"></i></span>
-                  </label>
-                  <label class="selectgroup-item">
-                    <input type="radio" name="icon-input" value="2" class="selectgroup-input select-sidebar" checked>
-                    <span class="selectgroup-button selectgroup-button-icon" data-toggle="tooltip"
-                      data-original-title="Dark Sidebar"><i class="fas fa-moon"></i></span>
-                  </label>
-                </div>
-              </div>
-              <div class="p-15 border-bottom">
-                <h6 class="font-medium m-b-10">Color Theme</h6>
-                <div class="theme-setting-options">
-                  <ul class="choose-theme list-unstyled mb-0">
-                    <li title="white" class="active">
-                      <div class="white"></div>
-                    </li>
-                    <li title="cyan">
-                      <div class="cyan"></div>
-                    </li>
-                    <li title="black">
-                      <div class="black"></div>
-                    </li>
-                    <li title="purple">
-                      <div class="purple"></div>
-                    </li>
-                    <li title="orange">
-                      <div class="orange"></div>
-                    </li>
-                    <li title="green">
-                      <div class="green"></div>
-                    </li>
-                    <li title="red">
-                      <div class="red"></div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="p-15 border-bottom">
-                <div class="theme-setting-options">
-                  <label class="m-b-0">
-                    <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input"
-                      id="mini_sidebar_setting">
-                    <span class="custom-switch-indicator"></span>
-                    <span class="control-label p-l-10">Mini Sidebar</span>
-                  </label>
-                </div>
-              </div>
-              <div class="p-15 border-bottom">
-                <div class="theme-setting-options">
-                  <label class="m-b-0">
-                    <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input"
-                      id="sticky_header_setting">
-                    <span class="custom-switch-indicator"></span>
-                    <span class="control-label p-l-10">Sticky Header</span>
-                  </label>
-                </div>
-              </div>
-              <div class="mt-4 mb-4 p-3 align-center rt-sidebar-last-ele">
-                <a href="#" class="btn btn-icon icon-left btn-primary btn-restore-theme">
-                  <i class="fas fa-undo"></i> Restore Default
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <footer class="main-footer">
-        <div class="footer-left">
-          <a href="templateshub.net">Templateshub</a></a>
-        </div>
-        <div class="footer-right">
-        </div>
-      </footer>
-    </div>
-  </div>
-  <!-- General JS Scripts -->
-  <script src="assets/js/app.min.js"></script>
-  <!-- JS Libraies -->
-  <!-- Page Specific JS File -->
-  <!-- Template JS File -->
-  <script src="assets/js/scripts.js"></script>
-  <!-- Custom JS File -->
-  <script src="assets/js/custom.js"></script>
-</body>
-
-
-<!-- progress.html  21 Nov 2019 03:51:03 GMT -->
-</html>
+       

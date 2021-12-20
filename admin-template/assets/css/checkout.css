@@ -1,0 +1,13 @@
+.main-content h1{
+  color: #274685;
+  font-size: 28px;
+  padding-top: 30px;
+}
+.main-content{
+    background-color: #fff;
+}
+.main-content img{
+    height: 120px;
+    width: 150px;
+    cursor: pointer;
+}
