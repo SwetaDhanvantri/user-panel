@@ -1,0 +1,14 @@
+.d-flex{
+    box-shadow: 0 15px 18px rgba(179, 179, 179, .6);
+    margin-bottom: 40px;
+}
+
+.lesson{
+    border:solid 1px rgb(209, 204, 204)
+
+}
+.title{
+    box-shadow: 0 15px 18px rgba(179, 179, 179, .6);
+    background-color: #274685;
+    color: #fff;
+}
